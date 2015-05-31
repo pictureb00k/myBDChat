@@ -1,0 +1,50 @@
+<html>
+ <head>
+   <link rel="stylesheet" type="text/css" href="/resources/css/styles.css">
+     <script type="text/javascript" src="/resources/js/scripts.js"></script>
+ </head>
+ <body onload="run()">
+ <div id = "page">
+   <div class="header"><h1 align = center>Feel freedom in your words</h1></div>
+  <div id="incoming_messages" class="scroll" >
+  </div>
+  <div id="outgoing_messages">
+    <table>
+      <tr>
+        <td>
+	  <input type="text" class="message_box" id="message_area" placeholder="type message here">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p align=right>
+	    <input type="button" value="ok" class = "hide" id="end_edit">
+            <input type="button" value="sent" id = "sent_button" onclick='sent()'>
+          </p>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <div id="login">
+    <p>
+      <input type="text" id="name" placeholder="Name">
+    </p>
+    <p>
+      <input type="button" value="Enter chat" onclick='log()'>
+    </p>
+  </div>
+  <div id="exit">
+    <p id="text_exit">
+    </p>
+	<input type="text" id="edit">
+	<input type="button" id="edit_ok" value="ok" onclick='ok_edit()'>
+	<input type="button" value="exit" onclick='exit()' id="exit_button">
+	<input type="button" value="edit" onclick='edit()' id="edit_button">
+  </div>
+  <div id="users_holder">
+	
+  </div>
+  <div id="footer">&copy; Pavel Bortnik</div>
+ </div>
+ </body>
+</html>
